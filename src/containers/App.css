@@ -1,0 +1,12 @@
+@font-face {
+font-family: 'Kotoba Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Kotoba Regular'), url('../components/Kotoba-l2zq.woff') format('woff');
+}
+
+h1{
+	font-family: 'Kotoba Regular';
+	font-weight: 200;
+	color: #0ccac4;
+}

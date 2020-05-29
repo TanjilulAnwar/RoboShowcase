@@ -15,10 +15,7 @@ return(
 		   email= {robots[i].email} />
 
 		   );
-	
 	})
-
-
 
 }
 	
