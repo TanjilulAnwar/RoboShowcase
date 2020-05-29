@@ -4,7 +4,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox'
 import Scroll from '../components/Scroll'
 import './App.css' 
-
+import ErrorBoundry from '../components/ErrorBoundry'
 
 class App extends Component
 {
@@ -23,7 +23,7 @@ componentDidMount(){
 
 	fetch('https://jsonplaceholder.typicode.com/users')
 	.then(response=> response.json())
-	.then(users=>this.setState({robots:users})); 
+	.then(users=>{this.setState({robots:users})}); 
 	//.then(users=>{}); 
 }
 
@@ -45,7 +45,9 @@ return !robots.length?
 <h1 className="f1">Robo Showcase</h1>
 <SearchBox SearchChange= {this.onSearchChange}/>
 <Scroll>
+<ErrorBoundry>
   <CardList robots = {filterRobots}/>
+  </ErrorBoundry>
 </Scroll>
 </div>
 	);
