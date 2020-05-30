@@ -42,7 +42,7 @@ return !robots.length?
 	(<div className="tc"><img src="loading.gif" alt='robots' width = "70px"/> </div>):
 (
 <div className="tc">
-<h1 className="f1">Robo Showcase</h1>
+<h1 className="f1">Robo Showcase 2.0</h1>
 <SearchBox SearchChange= {this.onSearchChange}/>
 <Scroll>
 <ErrorBoundry>
