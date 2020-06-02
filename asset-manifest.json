@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/RoboShowcase/static/css/main.84f68bb1.chunk.css",
-    "main.js": "/RoboShowcase/static/js/main.3a121109.chunk.js",
-    "main.js.map": "/RoboShowcase/static/js/main.3a121109.chunk.js.map",
+    "main.css": "/RoboShowcase/static/css/main.41f31c93.chunk.css",
+    "main.js": "/RoboShowcase/static/js/main.4ab160d0.chunk.js",
+    "main.js.map": "/RoboShowcase/static/js/main.4ab160d0.chunk.js.map",
     "runtime-main.js": "/RoboShowcase/static/js/runtime-main.d10545a2.js",
     "runtime-main.js.map": "/RoboShowcase/static/js/runtime-main.d10545a2.js.map",
     "static/css/2.3c03f26f.chunk.css": "/RoboShowcase/static/css/2.3c03f26f.chunk.css",
-    "static/js/2.88b08eb1.chunk.js": "/RoboShowcase/static/js/2.88b08eb1.chunk.js",
-    "static/js/2.88b08eb1.chunk.js.map": "/RoboShowcase/static/js/2.88b08eb1.chunk.js.map",
+    "static/js/2.692a01d9.chunk.js": "/RoboShowcase/static/js/2.692a01d9.chunk.js",
+    "static/js/2.692a01d9.chunk.js.map": "/RoboShowcase/static/js/2.692a01d9.chunk.js.map",
     "index.html": "/RoboShowcase/index.html",
-    "precache-manifest.2d11c8e7999072cade5cb73b8d31731c.js": "/RoboShowcase/precache-manifest.2d11c8e7999072cade5cb73b8d31731c.js",
+    "precache-manifest.71a896dc63f6ed218bdbfe856906d0ce.js": "/RoboShowcase/precache-manifest.71a896dc63f6ed218bdbfe856906d0ce.js",
     "service-worker.js": "/RoboShowcase/service-worker.js",
     "static/css/2.3c03f26f.chunk.css.map": "/RoboShowcase/static/css/2.3c03f26f.chunk.css.map",
-    "static/css/main.84f68bb1.chunk.css.map": "/RoboShowcase/static/css/main.84f68bb1.chunk.css.map",
-    "static/js/2.88b08eb1.chunk.js.LICENSE.txt": "/RoboShowcase/static/js/2.88b08eb1.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/RoboShowcase/static/media/Kotoba-l2zq.7eeda46c.woff"
+    "static/css/main.41f31c93.chunk.css.map": "/RoboShowcase/static/css/main.41f31c93.chunk.css.map",
+    "static/js/2.692a01d9.chunk.js.LICENSE.txt": "/RoboShowcase/static/js/2.692a01d9.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/RoboShowcase/static/media/Kotoba-l2zq.7eeda46c.woff",
+    "static/media/loading.gif": "/RoboShowcase/static/media/loading.584b607f.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.d10545a2.js",
     "static/css/2.3c03f26f.chunk.css",
-    "static/js/2.88b08eb1.chunk.js",
-    "static/css/main.84f68bb1.chunk.css",
-    "static/js/main.3a121109.chunk.js"
+    "static/js/2.692a01d9.chunk.js",
+    "static/css/main.41f31c93.chunk.css",
+    "static/js/main.4ab160d0.chunk.js"
   ]
 }
