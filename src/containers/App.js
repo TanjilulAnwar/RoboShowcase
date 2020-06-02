@@ -1,49 +1,59 @@
 import React,{Component} from 'react';
 import CardList from '../components/CardList';
+import {connect} from 'react-redux'
 //import {robots} from './robots';
 import SearchBox from '../components/SearchBox'
 import Scroll from '../components/Scroll'
-import './App.css' 
+
+import './App.css' ;
 import ErrorBoundry from '../components/ErrorBoundry'
+import{setSearchField,requestRobots} from '../actions'
+
+import loading from '../images/loading.gif'
+
+const mapStatetoProps =state=>{
+	return{
+		searchField:state.searchRobots.searchField,
+		robots:state.requestRobots.robots,
+		isPending:state.requestRobots.isPending,
+		error:state.requestRobots.error
+	}
+}
+
+const mapDispatchtoProps = (dispatch) =>{
+	return {
+		onSearchChange:(event) => dispatch(setSearchField(event.target.value)),
+		onRequestRobots: () => dispatch(requestRobots())
+
+}
+
+}
+
 
 class App extends Component
 {
 
-constructor(){
-	super()
-	this.state ={
-		robots: [],
-		searchfield: ''
-	}
-}
-
-
 
 componentDidMount(){
-
-	fetch('https://jsonplaceholder.typicode.com/users')
-	.then(response=> response.json())
-	.then(users=>{this.setState({robots:users})}); 
-	//.then(users=>{}); 
+ 
+this.props.onRequestRobots();
 }
 
 
-onSearchChange=(event)=>{
-	this.setState({searchfield: event.target.value});
-}
 
 render(){
-	const {robots,searchfield} =this.state;
+
+const {searchField,onSearchChange,robots,isPending} =this.props;
 const filterRobots = robots.filter(robot=>{
-		return robot.name.toLowerCase().includes(searchfield.toLowerCase());
+		return robot.name.toLowerCase().includes(searchField.toLowerCase());
 	})
 
-return !robots.length?
-	(<div className="tc"><img src="loading.gif" alt='robots' width = "70px"/> </div>):
+return isPending?
+	(<div className="tc"><img src={loading}alt='Loading..' width = "70px"/> </div>):
 (
 <div className="tc">
 <h1 className="f1">Robo Showcase 2.0</h1>
-<SearchBox SearchChange= {this.onSearchChange}/>
+<SearchBox SearchChange= {onSearchChange}/>
 <Scroll>
 <ErrorBoundry>
   <CardList robots = {filterRobots}/>
@@ -59,4 +69,4 @@ return !robots.length?
 }
 }
 
-export default App;
+export default connect(mapStatetoProps,mapDispatchtoProps)(App);
